@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Для тебя ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff0f3;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: #873b52;
+    }
+    .card {
+      padding: 30px;
+      max-width: 350px;
+    }
+    h1 { font-size: 32px; }
+    p { line-height: 1.7; }
+    button {
+      background: #ed7895;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      border-radius: 30px;
+      font-size: 17px;
+      cursor: pointer;
+    }
+    #letter { display: none; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Привет, любимая ❤️</h1>
+    <p>Я сделал кое-что специально для тебя.</p>
+    <button onclick="openLetter()">Открыть письмо 💌</button>
+    <p id="letter">
+      Прости меня. Я знаю, что совершил ошибку.
+      Ты очень дорога мне, и я хочу всё исправить.
+      ❤️
+    </p>
+  </div>
+
+  <script>
+    function openLetter() {
+      document.getElementById("letter").style.display = "block";
+    }
+  </script>
+</body>
+</html>
